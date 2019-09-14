@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notas</title>
+  </head>
+  <body>
+    <h1>Notas</h1>
+    {% for note in note_list %}
+      <h2>{{ note.title }}</h2>
+      <p>{{ note.content }}</p>
+    {% endfor %}
+  </body>
+</html>
